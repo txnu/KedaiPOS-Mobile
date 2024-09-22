@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class NavbarProfile extends StatelessWidget {
+class NavbarSetting extends StatelessWidget {
   final String selectedTab;
   final Function(String) onTabChange;
 
-  const NavbarProfile({
+  const NavbarSetting({
     super.key,
     required this.selectedTab,
     required this.onTabChange,
@@ -13,7 +13,7 @@ class NavbarProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 40,
       decoration: const BoxDecoration(
           color: Colors.deepPurple,
           border: Border.symmetric(
@@ -23,18 +23,18 @@ class NavbarProfile extends StatelessWidget {
         children: [
           Expanded(
             child: InkWell(
-              onTap: () => onTabChange('Riwayat'),
+              onTap: () => onTabChange('Hari ini'),
               child: Container(
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: selectedTab == 'Riwayat'
+                  color: selectedTab == 'Hari ini'
                       ? Colors.grey[300]
                       : Colors.transparent,
                 ),
                 child: Text(
-                  "Riwayat",
+                  "Hari ini",
                   style: TextStyle(
-                      color: selectedTab == 'Riwayat'
+                      color: selectedTab == 'Hari ini'
                           ? Colors.black
                           : Colors.white,
                       fontSize: 14,
@@ -48,20 +48,19 @@ class NavbarProfile extends StatelessWidget {
           ),
           Expanded(
             child: InkWell(
-              onTap: () => onTabChange('Pendapatan'),
+              onTap: () => onTabChange('Semua'),
               child: Container(
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: selectedTab == 'Pendapatan'
+                  color: selectedTab == 'Semua'
                       ? Colors.grey[300]
                       : Colors.transparent,
                 ),
                 child: Text(
-                  "Pendapatan",
+                  "Semua",
                   style: TextStyle(
-                      color: selectedTab == 'Pendapatan'
-                          ? Colors.black
-                          : Colors.white,
+                      color:
+                          selectedTab == 'Semua' ? Colors.black : Colors.white,
                       fontSize: 14,
                       fontWeight: FontWeight.bold),
                 ),

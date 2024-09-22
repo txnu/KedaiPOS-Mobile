@@ -12,19 +12,19 @@ class SettingContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Container(
-        height: 550,
-        // color: Colors.deepPurple,
-        decoration: BoxDecoration(
-          color: Colors.grey[400],
-          borderRadius: const BorderRadius.only(
-            bottomLeft: Radius.circular(20),
-            bottomRight: Radius.circular(20),
-          ),
+      child: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(20),
+          bottomRight: Radius.circular(20),
         ),
-        child: Center(
-          child:
-              selectedTab == 'Riwayat' ? RiwayatContent() : PendapatanContent(),
+        child: Container(
+          height: 570,
+          decoration: const BoxDecoration(
+            color: Colors.deepPurple,
+          ),
+          child: selectedTab == 'Hari ini'
+              ? const RiwayatContent()
+              : const PendapatanContent(),
         ),
       ),
     );

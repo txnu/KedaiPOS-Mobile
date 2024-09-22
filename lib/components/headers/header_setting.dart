@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ProfileCard extends StatelessWidget {
+class HeaderSetting extends StatelessWidget {
   final String namabisnis;
   final String tanggalbergabung;
-  const ProfileCard({
+  const HeaderSetting({
     super.key,
     required this.namabisnis,
     required this.tanggalbergabung,
@@ -21,18 +21,18 @@ class ProfileCard extends StatelessWidget {
             topLeft: Radius.circular(20), topRight: Radius.circular(20)),
       ),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            height: 100,
-            width: 100,
+            height: 80,
+            width: 80,
             decoration: BoxDecoration(
               border: Border.all(width: 2),
               borderRadius: BorderRadius.circular(50),
             ),
             child: Image.asset(
               "assets/images/warung.png",
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
           ),
           const SizedBox(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kedaipos_mobile/components/tables/table_history.dart';
 
 class RiwayatContent extends StatefulWidget {
   const RiwayatContent({super.key});
@@ -8,21 +9,27 @@ class RiwayatContent extends StatefulWidget {
 }
 
 class _RiwayatContentState extends State<RiwayatContent> {
+  final List<Map<String, String>> historys = [
+    {
+      "kodeTransaksi": "001",
+      "item": "Produk A",
+      "totalTransaksi": "Rp20.000",
+      "hargaJual": "Rp50.000",
+      "stok": "5",
+    },
+    {
+      "kodeTransaksi": "002",
+      "item": "Produk B",
+      "totalTransaksi": "Rp10.000",
+      "hargaJual": "Rp30.000",
+      "stok": "8",
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepPurple,
-      body: SingleChildScrollView(
-        child: Container(
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(20),
-              bottomRight: Radius.circular(20),
-            ),
-          ),
-          child: Text("Riwayata"),
-        ),
-      ),
+    return SingleChildScrollView(
+      child: TableHistory(historys: historys),
     );
   }
 }
