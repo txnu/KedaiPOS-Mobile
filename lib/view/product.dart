@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kedaipos_mobile/components/buttons/button_add.dart';
+import 'package:kedaipos_mobile/components/forms/ProductForm.dart';
 import 'package:kedaipos_mobile/components/tables/table_product.dart';
 
 class ProductView extends StatefulWidget {
@@ -29,18 +31,37 @@ class _ProductViewState extends State<ProductView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Daftar Produk",
-          style: TextStyle(fontWeight: FontWeight.bold),
+        appBar: AppBar(
+          title: const Text(
+            "Daftar Produk",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          actions: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.search))
+          ],
         ),
-        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
-      ),
-      body: SingleChildScrollView(
-        child: TableProduct(
-          products: products,
+        body: SingleChildScrollView(
+          child: TableProduct(
+            products: products,
+          ),
         ),
-      ),
+        floatingActionButton: ButtonAdd(onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const AddProductForm(),
+            ),
+          );
+        }));
+  }
+}
+
+class AddProductForm extends StatelessWidget {
+  const AddProductForm({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: ProductForm(),
     );
   }
 }
