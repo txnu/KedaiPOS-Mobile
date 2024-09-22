@@ -34,7 +34,7 @@ class _HomeViewState extends State<HomeView> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          "JayaPOS - Solusi Bisnis Anda",
+          "Dashboard",
           style:
               TextStyle(fontWeight: FontWeight.bold, color: Colors.deepPurple),
         ),
