@@ -14,15 +14,11 @@ class _RiwayatContentState extends State<RiwayatContent> {
       "kodeTransaksi": "001",
       "item": "Produk A",
       "totalTransaksi": "Rp20.000",
-      "hargaJual": "Rp50.000",
-      "stok": "5",
     },
     {
       "kodeTransaksi": "002",
       "item": "Produk B",
       "totalTransaksi": "Rp10.000",
-      "hargaJual": "Rp30.000",
-      "stok": "8",
     },
   ];
 

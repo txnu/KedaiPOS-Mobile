@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kedaipos_mobile/components/contains/pendapatan_content.dart';
-import 'package:kedaipos_mobile/components/contains/riwayat_content.dart';
+import 'package:kedaipos_mobile/components/contains/semua_content.dart';
+import 'package:kedaipos_mobile/components/contains/hariini_content.dart';
 
 class SettingContent extends StatelessWidget {
   final String selectedTab;

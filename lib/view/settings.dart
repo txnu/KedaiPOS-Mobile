@@ -13,7 +13,7 @@ class SettingsView extends StatefulWidget {
 }
 
 class _SettingsViewState extends State<SettingsView> {
-  String _selectedTab = 'Riwayat';
+  String _selectedTab = 'Hari ini';
 
   void _updateTab(String tab) {
     setState(() {
