@@ -23,8 +23,8 @@ class SettingContent extends StatelessWidget {
             color: Colors.deepPurple,
           ),
           child: selectedTab == 'Hari ini'
-              ? const RiwayatContent()
-              : const PendapatanContent(),
+              ? const TodayContent()
+              : const AllContent(),
         ),
       ),
     );

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kedaipos_mobile/components/tables/table_history.dart';
 
-class RiwayatContent extends StatefulWidget {
-  const RiwayatContent({super.key});
+class TodayContent extends StatefulWidget {
+  const TodayContent({super.key});
 
   @override
-  State<RiwayatContent> createState() => _RiwayatContentState();
+  State<TodayContent> createState() => _TodayContentState();
 }
 
-class _RiwayatContentState extends State<RiwayatContent> {
+class _TodayContentState extends State<TodayContent> {
   final List<Map<String, String>> historys = [
     {
       "kodeTransaksi": "001",

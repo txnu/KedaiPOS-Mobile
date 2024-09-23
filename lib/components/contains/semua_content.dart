@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class PendapatanContent extends StatefulWidget {
-  const PendapatanContent({super.key});
+class AllContent extends StatefulWidget {
+  const AllContent({super.key});
 
   @override
-  State<PendapatanContent> createState() => _PendapatanContentState();
+  State<AllContent> createState() => _AllContentState();
 }
 
-class _PendapatanContentState extends State<PendapatanContent> {
+class _AllContentState extends State<AllContent> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Center(),
     );
   }

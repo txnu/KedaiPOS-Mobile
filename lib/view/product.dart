@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kedaipos_mobile/components/buttons/button_add.dart';
-import 'package:kedaipos_mobile/components/forms/ProductForm.dart';
+import 'package:kedaipos_mobile/components/forms/form_product.dart';
 import 'package:kedaipos_mobile/components/tables/table_product.dart';
 
 class ProductView extends StatefulWidget {
