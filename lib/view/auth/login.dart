@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kedaipos_mobile/components/navbar/view/navbar.dart';
+import 'package:kedaipos_mobile/components/navbar/navbar_dashboard.dart';
 import 'package:kedaipos_mobile/view/auth/register.dart';
 
 class LoginView extends StatefulWidget {

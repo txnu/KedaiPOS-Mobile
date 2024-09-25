@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kedaipos_mobile/components/navbar/model/model.dart';
+// import 'package:kedaipos_mobile/components/navbar/model/model.dart';
 import 'package:kedaipos_mobile/view/analytic.dart';
 import 'package:kedaipos_mobile/view/history.dart';
-import 'package:kedaipos_mobile/view/home.dart';
-import 'package:kedaipos_mobile/view/product.dart';
+import 'package:kedaipos_mobile/view/home/home.dart';
+import 'package:kedaipos_mobile/view/home/product.dart';
 import 'package:kedaipos_mobile/view/settings.dart';
 
 class NavbarView extends StatefulWidget {
@@ -22,22 +22,28 @@ class _NavbarViewState extends State<NavbarView> {
     });
   }
 
-  static const List<Widget> _pages = <Widget>[
-    NavbarModel(
-      content: HomeView(),
-    ),
-    NavbarModel(
-      content: ProductView(),
-    ),
-    NavbarModel(
-      content: AnalyticView(),
-    ),
-    NavbarModel(
-      content: HistoryView(),
-    ),
-    NavbarModel(
-      content: SettingsView(),
-    ),
+  static const List _pages = [
+    HomeView(),
+    ProductView(),
+    AnalyticView(),
+    HistoryView(),
+    SettingsView(),
+
+    // NavbarModel(
+    //   content: HomeView(),
+    // ),
+    // NavbarModel(
+    //   content: ProductView(),
+    // ),
+    // NavbarModel(
+    //   content: AnalyticView(),
+    // ),
+    // NavbarModel(
+    //   content: HistoryView(),
+    // ),
+    // NavbarModel(
+    //   content: SettingsView(),
+    // ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -56,7 +62,8 @@ class _NavbarViewState extends State<NavbarView> {
               icon: Icon(Icons.playlist_add_check), label: "Produk"),
           BottomNavigationBarItem(
               icon: Icon(Icons.analytics), label: "Analisis"),
-          BottomNavigationBarItem(icon: Icon(Icons.history), label: "Riwayat"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.document_scanner), label: "Laporan"),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: "Pengaturan"),
         ],

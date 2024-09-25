@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kedaipos_mobile/components/navbar/view/navbar.dart';
+// import 'package:kedaipos_mobile/components/navbar/navbar.dart';
+import 'package:kedaipos_mobile/components/navbar/navbar_dashboard.dart';
 import 'package:kedaipos_mobile/view/auth/login.dart';
 
 void main() {
